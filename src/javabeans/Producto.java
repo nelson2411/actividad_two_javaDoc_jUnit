@@ -69,5 +69,67 @@ public class Producto {
 		return Math.pow(base, exponente);
 	}
 	
+	/*
+	 * Al ejecutar en la consola visualizaremos un menú con las opciones de los métodos que se pueden ejecutar.
+	 * Se ejecutará un prompt para que el usuario ingrese la opción deseada.
+	 * 
+	 */
+	
+	public static void main(String[] args) {
+		Producto producto = new Producto();
+		java.util.Scanner scanner = new java.util.Scanner(System.in);
+		int opcion = 0;
+		do {
+			System.out.println("1. Multiplicar dos números reales");
+			System.out.println("2. Multiplicar dos números enteros");
+			System.out.println("3. Multiplicar tres números reales");
+			System.out.println("4. Obtener potencia");
+			System.out.println("5. Salir");
+			System.out.print("Ingrese la opción deseada: ");
+			opcion = scanner.nextInt();
+			switch (opcion) {
+			case 1:
+				System.out.print("Ingrese el primer número real: ");
+				double a = scanner.nextDouble();
+				System.out.print("Ingrese el segundo número real: ");
+				double b = scanner.nextDouble();
+				System.out.println("El producto de los números reales es: " + producto.multiplicar(a, b));
+				break;
+			case 2:
+				System.out.print("Ingrese el primer número entero: ");
+				int c = scanner.nextInt();
+				System.out.print("Ingrese el segundo número entero: ");
+				int d = scanner.nextInt();
+				System.out.println("El producto de los números enteros es: " + producto.multiplicar(c, d));
+				break;
+			case 3:
+				System.out.print("Ingrese el primer número real: ");
+				double e = scanner.nextDouble();
+				System.out.print("Ingrese el segundo número real: ");
+				double f = scanner.nextDouble();
+				System.out.print("Ingrese el tercer número real: ");
+				double g = scanner.nextDouble();
+				System.out.println("El producto de los números reales es: " + producto.multiplicar(e, f, g));
+				break;
+			case 4:
+				System.out.print("Ingrese la base: ");
+				double h = scanner.nextDouble();
+				System.out.print("Ingrese el exponente: ");
+				double i = scanner.nextDouble();
+				System.out.println("La potencia es: " + producto.obtenerPotencia(h, i));
+				break;
+			case 5:
+				System.out.println("¡Hasta luego!");
+				break;
+			default:
+				System.out.println("Opción inválida");
+				break;
+			}
+		} while (opcion != 5);
+		scanner.close();
+	}
+	
+	
+	
 	
 }
