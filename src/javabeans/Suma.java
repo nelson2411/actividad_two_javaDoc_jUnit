@@ -63,7 +63,7 @@ public class Suma {
      * @param args Argumentos de línea de comandos (no se usan en este caso).
      */
     public static void main(String[] args) {
-       Suma calculadora = new CalculadoraSuma();
+       Suma calculadora = new Suma();
 
         // Ejemplo de uso
         double resultadoReales = calculadora.sumaReales(3.5, 4.2);
