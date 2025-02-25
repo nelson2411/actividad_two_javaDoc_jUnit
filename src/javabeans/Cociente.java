@@ -1,5 +1,11 @@
 package javabeans;
 
+/**
+ * Esta clase implementará todos los métodos que están relacionados con la
+ * división de la calculadora. Esta clase tendrá los siguientes métodos: 1.
+ * División de dos números reales. 2. División de dos números enteros. 3.
+ * Inverso de un número real. 4. Raíz de un número.
+ */
 public class Cociente {
 	/**
 	 * División de dos números reales.
