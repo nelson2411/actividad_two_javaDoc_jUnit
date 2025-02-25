@@ -1,17 +1,6 @@
 package javabeans;
 
 
-/*
- * 
- * En esta clase necesitamos los siguientes metodos:
- * Un metodo que multiplique dos numeros reales y devuelva el resultado.
- * Un metodo que que brinde el producto de dos numeros enteros. Tomando dos parametros y retornando el resultado.
- * Un metodo que brinde el producto de tres numeros reales. Tomando tres parametros y retornando el resultado.
- * Obtener potencia: Metodo que recibe dos parametros, la base y el exponente, y devuelve la potencia. 
- * 
- * 
- */
-
 public class Producto {
 
 	/**
